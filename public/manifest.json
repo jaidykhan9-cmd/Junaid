@@ -1,0 +1,39 @@
+{
+  "id": "/",
+  "name": "JD Electrical & Plumbing Services",
+  "short_name": "JD Services",
+  "description": "Certified Electrical & Plumbing MEP Engineering Services in Mansehra, KP, Pakistan. Founded in 2018 by CEO Junaid Farooq.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "theme_color": "#08090d",
+  "background_color": "#08090d",
+  "categories": ["business", "utilities", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

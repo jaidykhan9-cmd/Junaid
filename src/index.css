@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-obsidian-deep: #08090d;
+    --color-obsidian-dark: #0d0f15;
+    --color-obsidian-surface: #131620;
+    --color-obsidian-elevated: #1a1e2b;
+    --color-obsidian-border: rgba(212, 175, 55, 0.22);
+    --color-gold-base: #d4af37;
+    --color-gold-light: #fae8b4;
+    --color-gold-muted: #9b7618;
+    --color-electric-blue: #38bdf8;
+    --color-cyan-water: #06b6d4;
+    --color-cream-prose: #f8fafc;
+    --color-cream-muted: #94a3b8;
+  }
+
+  body {
+    background-color: var(--color-obsidian-dark);
+    color: var(--color-cream-prose);
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    selection-background-color: #d4af37;
+    selection-color: #08090d;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-serif-lux {
+    font-family: 'Cinzel', serif;
+  }
+
+  .font-powering {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-cinzel-decorative {
+    font-family: 'Cinzel Decorative', 'Cinzel', serif;
+  }
+
+  .font-digital-rain {
+    font-family: 'Share Tech Mono', 'Space Mono', monospace;
+  }
+
+  .font-mono-tech {
+    font-family: 'Space Mono', monospace;
+  }
+}
+
+/* Custom luxury scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08090d;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(212, 175, 55, 0.3);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Subtle luxury utilities */
+.luxury-glass {
+  background: rgba(13, 15, 21, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.22);
+}
+
+.luxury-glass-subtle {
+  background: rgba(13, 15, 21, 0.65);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.luxury-card {
+  background: linear-gradient(145deg, rgba(20, 23, 33, 0.95) 0%, rgba(13, 15, 22, 0.98) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 14px 35px -10px rgba(0, 0, 0, 0.6);
+}
+
+.luxury-card:hover {
+  border-color: rgba(212, 175, 55, 0.45);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff7d6 0%, #d4af37 50%, #aa820a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.electric-gradient-text {
+  background: linear-gradient(135deg, #e0f2fe 0%, #38bdf8 50%, #0284c7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.water-gradient-text {
+  background: linear-gradient(135deg, #ecfeff 0%, #22d3ee 50%, #0891b2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Metallic hairline divider */
+.gold-hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.4) 50%, transparent 100%);
+}
+
+@keyframes shimmer-ltr {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer-ltr {
+  animation: shimmer-ltr 3s infinite linear;
+}
+
+@keyframes goldElectricFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes electricBreathingGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 16px rgba(212, 175, 55, 0.45)) drop-shadow(0 0 35px rgba(250, 232, 180, 0.25));
+  }
+  50% {
+    filter: drop-shadow(0 0 28px rgba(212, 175, 55, 0.85)) drop-shadow(0 0 55px rgba(250, 232, 180, 0.5));
+  }
+}
+
+@keyframes sparkFloat {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-4px) scale(1.15);
+    opacity: 1;
+  }
+}
+
+.animate-powering-flow {
+  background-size: 250% auto;
+  animation: goldElectricFlow 4s ease infinite;
+}
+
+.animate-electric-glow {
+  animation: electricBreathingGlow 3s ease-in-out infinite;
+}
+
+.animate-spark-float {
+  animation: sparkFloat 2.5s ease-in-out infinite;
+}
+
+
